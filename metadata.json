@@ -1,0 +1,6 @@
+{
+  "name": "Breeze Restaurant | ব্রীজ রেস্তোরাঁ",
+  "description": "Breeze Restaurant (ব্রীজ রেস্তোরাঁ), a fine dining restaurant in Dhaka offering dine-in, drive-through and no-contact delivery. Located at House# 1/C, 1/D, Road# 16, Dhaka 1229.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
