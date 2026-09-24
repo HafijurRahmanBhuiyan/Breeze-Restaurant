@@ -93,21 +93,25 @@ export const menuItems: MenuItem[] = [
     id: 'm1',
     name: 'Chicken Tender Rice Bowl',
     category: 'Popular',
-    description: "A satisfying rice-bowl selection highlighted among the restaurant's popular dishes.",
+    priceText: '৳350',
+    description: "A satisfying rice-bowl selection highlighted among the restaurant's popular dishes with crispy tenders and aromatic jasmine rice.",
     highlight: true,
+    imageKey: 'riceBowl',
   },
   {
     id: 'm2',
     name: 'Spicy Mushroom',
     category: 'Popular',
     priceText: '৳295',
-    description: "A flavorful mushroom selection featured among the restaurant's popular menu highlights.",
+    description: "A flavorful mushroom selection featured among the restaurant's popular menu highlights sauteed in garlic butter and chili.",
     highlight: true,
+    imageKey: 'spicyMushroom',
   },
   {
     id: 'm3',
     name: 'Breeze Fantasy Platter',
     category: 'Popular',
+    priceText: '৳1,290',
     description: 'A generous assortment of treats featuring grilled chicken steaks, aromatic fried rice, crispy wings, potato wedges, and seasoned vegetables.',
     highlight: true,
     imageKey: 'platter',
@@ -116,8 +120,10 @@ export const menuItems: MenuItem[] = [
     id: 'm4',
     name: 'Family Jumbo Platter',
     category: 'Popular',
-    description: 'A signature sharing platter crafted for family gatherings and group dining.',
+    priceText: '৳850',
+    description: 'A grand feast platter crafted for family gatherings and celebrations, overflowing with succulent grilled lamb chops, kebabs, chicken skewers, roasted peppers, dips, and warm flatbreads.',
     highlight: true,
+    imageKey: 'familyJumbo',
   },
 
   // Mains & Platters
@@ -125,13 +131,17 @@ export const menuItems: MenuItem[] = [
     id: 'm5',
     name: 'Char Kway Teow',
     category: 'Mains',
+    priceText: '৳410',
     description: 'Wok-tossed noodles prepared with seafood, savory sauces, and aromatic herbs.',
+    imageKey: 'wokNoodles',
   },
   {
     id: 'm6',
     name: 'Chicken Steak with Fried Rice',
     category: 'Mains',
+    priceText: '৳540',
     description: 'Tender seasoned chicken steak served with aromatic rice, sauteed butter vegetables, and golden fries.',
+    imageKey: 'steakRice',
   },
   {
     id: 'm7',
@@ -139,6 +149,7 @@ export const menuItems: MenuItem[] = [
     category: 'Mains',
     priceText: '৳425',
     description: 'Classic creamy pasta tossed with savory parmesan sauce and tender chicken pieces.',
+    imageKey: 'pasta',
   },
   {
     id: 'm8',
@@ -146,6 +157,7 @@ export const menuItems: MenuItem[] = [
     category: 'Mains',
     priceText: '৳390',
     description: 'Wok-fried egg noodles tossed with fresh vegetables and seasoned savory chicken.',
+    imageKey: 'wokNoodles',
   },
   {
     id: 'm9',
@@ -153,6 +165,7 @@ export const menuItems: MenuItem[] = [
     category: 'Mains',
     priceText: '৳450',
     description: 'Baked pasta layered with savory sauce and a golden melted cheese crust.',
+    imageKey: 'pasta',
   },
 
   // Pizza
@@ -169,6 +182,7 @@ export const menuItems: MenuItem[] = [
     name: 'Artisan Cheesy Pizza',
     category: 'Pizza',
     description: 'Freshly baked oven pizza generously layered with melted cheese and savory toppings.',
+    imageKey: 'pizza',
   },
 
   // Burgers & Sandwiches
@@ -178,6 +192,7 @@ export const menuItems: MenuItem[] = [
     category: 'Burgers & Sandwiches',
     priceText: '৳375',
     description: 'Golden grilled sandwich stuffed with seasoned chicken and cheese, served with crispy french fries and dipping sauce.',
+    imageKey: 'sandwich',
   },
   {
     id: 'm13',
@@ -185,6 +200,7 @@ export const menuItems: MenuItem[] = [
     category: 'Burgers & Sandwiches',
     priceText: '৳450',
     description: 'Multi-layer toasted club sandwich loaded with premium fillings and accompanied by golden fries.',
+    imageKey: 'sandwich',
   },
   {
     id: 'm14',
@@ -192,6 +208,7 @@ export const menuItems: MenuItem[] = [
     category: 'Burgers & Sandwiches',
     priceText: '৳415',
     description: 'Savory cured beef sandwich served warm in toasted artisanal bread.',
+    imageKey: 'sandwich',
   },
   {
     id: 'm15',
@@ -199,6 +216,7 @@ export const menuItems: MenuItem[] = [
     category: 'Burgers & Sandwiches',
     priceText: '৳350',
     description: 'Tender seasoned chicken patty stacked with fresh crisp lettuce and house dressing in a soft bun.',
+    imageKey: 'burger',
   },
   {
     id: 'm16',
@@ -206,6 +224,7 @@ export const menuItems: MenuItem[] = [
     category: 'Burgers & Sandwiches',
     priceText: '৳395',
     description: 'Juicy grilled beef patty topped with savory garnishes and house burger sauce.',
+    imageKey: 'burger',
   },
 
   // Appetizers & Soups
@@ -215,6 +234,7 @@ export const menuItems: MenuItem[] = [
     category: 'Appetizers & Soups',
     priceText: '৳425',
     description: 'Crispy glazed chicken wings tossed with rich house seasoning.',
+    imageKey: 'wings',
   },
   {
     id: 'm18',
@@ -222,6 +242,7 @@ export const menuItems: MenuItem[] = [
     category: 'Appetizers & Soups',
     priceText: '৳499',
     description: 'Crisp golden battered prawns served with a delicate dipping sauce.',
+    imageKey: 'tempura',
   },
   {
     id: 'm19',
@@ -229,6 +250,7 @@ export const menuItems: MenuItem[] = [
     category: 'Appetizers & Soups',
     priceText: '৳295',
     description: 'Tender mushrooms sauteed in a rich garlic butter cream sauce.',
+    imageKey: 'spicyMushroom',
   },
   {
     id: 'm20',
@@ -236,6 +258,7 @@ export const menuItems: MenuItem[] = [
     category: 'Appetizers & Soups',
     priceText: '৳390',
     description: 'Smooth and comforting warm mushroom soup blended with cream and herbs.',
+    imageKey: 'soup',
   },
   {
     id: 'm21',
@@ -243,6 +266,7 @@ export const menuItems: MenuItem[] = [
     category: 'Appetizers & Soups',
     priceText: '৳350',
     description: 'Fragrant spicy and sour Thai soup infused with lemongrass and herbs.',
+    imageKey: 'soup',
   },
 
   // Desserts
@@ -260,13 +284,15 @@ export const menuItems: MenuItem[] = [
     category: 'Desserts',
     priceText: '৳350',
     description: 'Crisp Belgian-style waffle served warm alongside rich vanilla ice cream.',
+    imageKey: 'waffle',
   },
   {
     id: 'm24',
     name: 'Ice-Cream Sundae',
     category: 'Desserts',
     priceText: '৳375',
-    description: 'Chilled dessert sundae with assorted scoops, sweet drizzle, and toppings.',
+    description: 'Chilled dessert sundae with rich scoops, hot fudge chocolate drizzle, whipped cream, and sweet cherry topping.',
+    imageKey: 'sundae',
   },
 
   // Drinks
@@ -282,20 +308,23 @@ export const menuItems: MenuItem[] = [
     name: 'Island Breeze Mocktail',
     category: 'Drinks',
     priceText: '৳310',
-    description: 'Cooling house-signature tropical mocktail crafted for warm Dhaka afternoons.',
+    description: 'Crisp, cooling signature lime mojito mocktail packed with crushed ice, fresh garden mint sprigs, and citrusy lime wheels.',
+    imageKey: 'mocktail',
   },
   {
     id: 'm27',
     name: 'Extreme Chocolate Frappe',
     category: 'Drinks',
     priceText: '৳380',
-    description: 'Blended iced chocolate drink crowned with rich chocolate drizzle.',
+    description: 'Decadent rich blended chocolate frappe crowned with whipped cream, cocoa shavings, dripping chocolate drizzle, and mini marshmallows.',
+    imageKey: 'chocolateFrappe',
   },
   {
     id: 'm28',
     name: 'Mango Lassi',
     category: 'Drinks',
-    description: 'Smooth, refreshing traditional chilled yogurt beverage flavored with sweet mango.',
+    description: 'Smooth, refreshing traditional chilled yogurt beverage blended with sweet mango and served with fresh mango slices.',
+    imageKey: 'mangoLassi',
   },
   {
     id: 'm29',
@@ -303,6 +332,7 @@ export const menuItems: MenuItem[] = [
     category: 'Drinks',
     priceText: '৳260',
     description: 'Classic zesty mocktail made with fresh crushed mint, lime, and sparkling soda.',
+    imageKey: 'mocktail',
   },
 ];
 

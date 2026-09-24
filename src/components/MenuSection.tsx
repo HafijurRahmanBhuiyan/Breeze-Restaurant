@@ -91,39 +91,57 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onReserveClick }) => {
               <div
                 key={item.id}
                 onClick={() => setActiveItemModal(item)}
-                className="group bg-white border border-[#E8E1D5] hover:border-[#8C6D37]/60 p-6 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col justify-between"
+                className="group bg-white border border-[#E8E1D5] hover:border-[#8C6D37]/60 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col sm:flex-row overflow-hidden"
               >
-                <div>
-                  <div className="flex items-start justify-between gap-4 mb-2">
-                    <div className="flex items-center gap-2">
-                      <h3 className="text-lg sm:text-xl font-serif font-bold text-[#171513] group-hover:text-[#8C6D37] transition-colors">
+                {/* Image Thumbnail */}
+                <div className="sm:w-44 md:w-40 lg:w-48 h-48 sm:h-auto shrink-0 relative overflow-hidden bg-[#1C1A18]">
+                  {itemImg ? (
+                    <img
+                      src={itemImg}
+                      alt={item.name}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-[#2A2724] text-[#8C8377]">
+                      <Utensils className="w-8 h-8 opacity-40" />
+                    </div>
+                  )}
+                  {item.highlight && (
+                    <span className="absolute top-2 left-2 text-[10px] uppercase font-semibold text-[#171513] tracking-wider bg-[#C9A86A] px-2 py-0.5 shadow-sm">
+                      Featured
+                    </span>
+                  )}
+                </div>
+
+                {/* Card Content */}
+                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1">
+                  <div>
+                    <div className="flex items-start justify-between gap-3 mb-1.5">
+                      <h3 className="text-lg sm:text-xl font-serif font-bold text-[#171513] group-hover:text-[#8C6D37] transition-colors leading-snug">
                         {item.name}
                       </h3>
-                      {item.highlight && (
-                        <span className="text-[10px] uppercase font-semibold text-[#8C6D37] tracking-wider bg-[#F5ECE0] px-2 py-0.5">
-                          Featured
+                      {item.priceText && (
+                        <span className="font-serif font-bold text-[#8C6D37] text-base sm:text-lg tabular-nums shrink-0">
+                          {item.priceText}
                         </span>
                       )}
                     </div>
-                    {item.priceText && (
-                      <span className="font-serif font-bold text-[#8C6D37] text-base sm:text-lg tabular-nums shrink-0">
-                        {item.priceText}
-                      </span>
-                    )}
+
+                    <p className="text-xs sm:text-sm text-[#5C554D] font-light leading-relaxed line-clamp-2">
+                      {item.description}
+                    </p>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-[#5C554D] font-light leading-relaxed mt-1">
-                    {item.description}
-                  </p>
-                </div>
-
-                <div className="flex items-center justify-between mt-4 pt-3 border-t border-[#F2ECE3] text-[11px] text-[#8C8377]">
-                  <span className="uppercase tracking-wider font-medium">
-                    Category: {item.category}
-                  </span>
-                  <span className="text-[#8C6D37] group-hover:underline">
-                    View Details
-                  </span>
+                  <div className="flex items-center justify-between mt-4 pt-3 border-t border-[#F2ECE3] text-[11px] text-[#8C8377]">
+                    <span className="uppercase tracking-wider font-medium">
+                      {item.category}
+                    </span>
+                    <span className="text-[#8C6D37] font-medium group-hover:underline inline-flex items-center gap-1">
+                      View Details ↗
+                    </span>
+                  </div>
                 </div>
               </div>
             );
